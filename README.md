@@ -5,3 +5,5 @@
 2. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?
 
     `publisher` dan `subscriber` memiliki url yang sama menandakan karena kedua program ini menggunakan protokol AMQP untuk berkomunikasi melalui message broker yang sama sehingga kedua program dapat saling mengirim dan memproses data
+
+![RabbitMQ](image1.png)

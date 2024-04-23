@@ -19,3 +19,5 @@ Pada gambar tersebut terlihat terdapat angka 1 pada bagian Connections, angka te
 Pada chart tersebut terlihat perubahan grafik yang ditampilkan pada bagian message rates, hal ini dipengaruhi oleh frekuensi `publisher` dalam mengirim data. Jika `publisher` mengirim data secara terus menerus maka grafiknya akan terus naik dan saat `publisher` berhenti mengirim data maka graiknya akan turun perlahan lahan hingga akhirnya menjadi datar.
 <br></br>
 
+![RabbitMQ-slow](slow.png)
+Karena program subscriber berjalan lebih lambat dari sebelumnya maka akan terjadi antrean messages sebelum akhirnya diterima oleh subscriber. Angka terakhir yang saya dapatkan pada chart queued messages bernilai sekitar 20 yang menunjukan terdapat sekitar 20 messages yang masih ada pada antrian sebelum diterima oleh subsriber.

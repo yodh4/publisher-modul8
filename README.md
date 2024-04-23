@@ -13,3 +13,9 @@ Tampilan RabbitMQ saat diakses melalui `localhost:5672/`
 ![RabbitMQ-connection](image2.png)
 ![terminal](terminal.png)
 Pada gambar tersebut terlihat terdapat angka 1 pada bagian Connections, angka tersebut menandakan terdapat 1 subscriber yang terhubung ke message broker RabbitMQ. Selain itu, pada gambar terminal terlihat saat program `publisher` di-run maka akan muncul pesan pada terminal `subscriber`, hal ini terjadi karena program `publisher` akan mengirim 5 data ke message broker dan `subscriber` yang terhubung ke message broker yang sama akan menerima data tersebut.
+<br></br>
+
+![RabbitMQ-msgrate](spike.png)
+Pada chart tersebut terlihat perubahan grafik yang ditampilkan pada bagian message rates, hal ini dipengaruhi oleh frekuensi `publisher` dalam mengirim data. Jika `publisher` mengirim data secara terus menerus maka grafiknya akan terus naik dan saat `publisher` berhenti mengirim data maka graiknya akan turun perlahan lahan hingga akhirnya menjadi datar.
+<br></br>
+
